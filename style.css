@@ -534,6 +534,19 @@ img {
   transform: scale(1.03);
 }
 
+/* Featured project: spans two columns so a five-card grid has no empty slot. */
+.work-card--wide {
+  grid-column: span 2;
+}
+
+.work-card--wide .work-card__media {
+  aspect-ratio: 21 / 9;
+}
+
+.work-card--wide .work-card__media img {
+  object-position: center top;
+}
+
 .work-card__body {
   display: flex;
   flex-direction: column;
@@ -800,6 +813,10 @@ html.has-js .panel.is-visible .panel__inner {
 
   .work {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .work-card--wide {
+    grid-column: auto;
   }
 
   .skills__row {
