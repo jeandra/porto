@@ -654,6 +654,46 @@ img {
   text-decoration: underline;
 }
 
+.cert-list {
+  list-style: none;
+  margin-top: 16px;
+  max-width: 660px;
+}
+
+.cert-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 9px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cert-list li:first-child {
+  border-top: none;
+}
+
+.cert-list a {
+  color: #e6e6ea;
+  font-size: clamp(14px, 0.92vw, 16px);
+  line-height: 1.45;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.cert-list a:hover {
+  color: var(--orange);
+}
+
+.cert-list__hours {
+  flex: none;
+  color: var(--gray);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+  padding-top: 3px;
+}
+
 /* ------------------------------------------------------------------ */
 /* Contact                                                             */
 /* ------------------------------------------------------------------ */
